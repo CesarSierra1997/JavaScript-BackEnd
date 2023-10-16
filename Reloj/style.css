@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 34, 32);
+
+}
+.reloj {
+    border: 1rem solid rgb(17, 216, 173);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vh;
+    font-family: monospace;
+    font-size: 2rem;
+    color: rgb(17, 216, 173);
+}
+.reloj:hover {
+    background-color: aqua;
+    color: black;
+    border: 1rem solid rgb(14, 83, 68);
+}
+
+/* Solucion 2 */
+.reloj1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -100px;
+}
+
+.relojcaja {
+    font-size: 3em;
+    display: flex;
+    background-color: rgb(50, 37, 63);
+    border: 1rem solid rgb(17, 216, 173);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 216, 173);
+}
+.relojcaja div {
+    margin: 0 10px;
+}
