@@ -44,6 +44,41 @@ body {
     height: 20px;
     background-color: rgb(226, 27, 76);
     border-radius: 50vh;
+    box-shadow: 0px 0px 10px 5px rgb(226, 27, 76);
+    z-index: 1000;
+}
+
+.reloj:hover {
+    background-color: rgb(1, 29, 4);  
+    border: 0.5rem solid rgb(0, 255, 13);
+    box-shadow: inset 0px 0px 20px 5px rgb(0, 255, 13);
+    .relojcaja{ 
+        background-color: rgb(129, 132, 134);  
+        color: orange;
+        border: 0.2rem solid orange;
+        box-shadow: 0px 0px 5px 3px orange;
+    }
+    .segundo::before{
+        background-color: orange;
+        box-shadow: 0px 0px 5px 3px orange;
+    }
+    .hora::before{
+        background-color: orange;
+        box-shadow: 0px 0px 5px 3px orange;
+    }
+    .minuto::before{
+        background-color: orange;
+        box-shadow: 0px 0px 5px 3px orange;
+    }
+}
+.reloj:hover::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 255, 13);
+    border-radius: 50vh;
+    box-shadow: 0px 0px 10px 5px rgb(0, 255, 13);
     z-index: 1000;
 }
 
@@ -59,6 +94,7 @@ body {
     height: 90px;
     background-color: blueviolet;
     z-index: 10;
+    box-shadow: 0px 0px 5px 3px rgb(165, 94, 236);
     border-radius: 50%;
 }
 
@@ -74,6 +110,7 @@ body {
     height: 140px;
     background-color: rebeccapurple;
     z-index: 11;
+    box-shadow: 0px 0px 5px 3px rgb(165, 94, 236);
     border-radius: 50%;
 }
 
@@ -89,6 +126,7 @@ body {
     height: 150px;
     background-color: rgb(51, 153, 148);
     z-index: 12;
+    box-shadow: 0px 0px 5px 3px rgb(43, 214, 226);
     border-radius: 50%;
 }
 
@@ -119,7 +157,12 @@ body {
     justify-content: center;
     align-items: center;
     color: rgb(17, 216, 173);
+    box-shadow: 0px 0px 5px 3px rgb(17, 216, 173);
+    z-index: 1000;
 }
+
+
+
 .relojcaja div {
     margin: 0 2px;
 }
