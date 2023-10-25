@@ -55,4 +55,5 @@ function relojDigital() {
 
 }
 // Actualizar la funcion cada 1000 mili segundos o 1 segundo
-setInterval(relojDigital, 1000);
+//preferiblemente 1 milisegundo de upload
+setInterval(relojDigital,1);

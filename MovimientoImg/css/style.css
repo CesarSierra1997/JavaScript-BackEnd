@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.esqueletoOff {
+    width: 550px;
+    height: 600px;
+    background-color: rgb(46, 29, 61);
+    border: 0.5rem solid rgb(226, 27, 76);
+    border-radius: 5vh;
+    box-shadow: inset 0px 0px 20px 5px rgb(226, 27, 76);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url("../img/esqueleto.png");
+}
+.esqueletoOff.on{
+    background-image: url("../img/esqueletoGif.gif");
+}
+.esqueletoOnOff {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(27, 24, 24);
+    border: 0.2rem solid rgb(226, 27, 76);
+    border-radius: 2vh;
+    box-shadow: inset 0px 0px 15px 5px rgb(226, 27, 76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+.esqueletoOnOff.on{
+    background-image: url("../img/esqueleto.png");
+}
+.esqueletoOnOff:hover{
+    background-color: aqua;
+    color: black;
+}
