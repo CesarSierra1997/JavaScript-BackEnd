@@ -54,7 +54,7 @@ function mostrarEventos() {
             <span class="diasFaltantes">${diferenciasFecha(evento.fecha)}</span>
             <span class="texto">dias<br>para</span>
          </div>      
-         <div class ="nombreEvento">${evento.nombre}</div>
+         <div class ="nombreEvento" id="nombreEvento">${evento.nombre}</div>
          <div class ="fechaEvento">${evento.fecha}</div>
          <div class="acciones">
           <button data-id="${evento.id}"class="eliminar">Eliminar</button>

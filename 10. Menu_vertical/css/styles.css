@@ -74,10 +74,10 @@ body{
 }
 .evento{
     margin-top: 10px;
-    padding: 10px;
     border: solid 2px rgb(0, 178, 255);
     margin-bottom: 20px;
     border-radius: 10px;
+    overflow: auto; /* Agrega barras de desplazamiento si el contenido se desborda */
 }
 .evento:hover{
     background-color: rgb(143, 221, 255);
@@ -86,14 +86,18 @@ body{
     display: flex;
     padding: 5px;
     padding-inline: 15px;
-    margin-inline: 10px;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
 }
-.nombreEvento{
+.nombreEvento font {
+    max-height: 200px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 20px; 
+    word-wrap: break-word; /* Romper palabras largas */
+    white-space: pre-line; /* Mantener saltos de línea */
 }
+
 .dias{
     font-size: 80%;
     display: flex;
